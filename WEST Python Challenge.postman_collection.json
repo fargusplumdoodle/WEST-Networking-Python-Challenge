@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "5855c1e9-efb4-4d9e-aaa7-c1317fa5a709",
+		"_postman_id": "72a01284-c04d-4b5c-b0be-a619b29ea6e8",
 		"name": "WEST Python Challenge",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "21301706"
-		},
+		"_exporter_id": "31211858"
+	},
 	"item": [
 		{
 			"name": "All Bricks",
@@ -50,14 +50,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/bricks",
+					"raw": "http://localhost:8000/bricks/red",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"bricks"
+						"bricks",
+						"red"
 					]
 				}
 			},
@@ -69,14 +70,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/bricks",
+					"raw": "http://localhost:8000/users/admin",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"bricks"
+						"users",
+						"admin"
 					]
 				}
 			},
@@ -113,6 +115,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"color\": \"orange\",\n    \"allowed_role\": 1000,\n    \"allowed_groups\": [\"public\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:8000/bricks",
 					"protocol": "http",
@@ -132,6 +143,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"mariana\",\n    \"role\": 9001,\n    \"groups\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:8000/users",
 					"protocol": "http",
