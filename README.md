@@ -1,20 +1,15 @@
 # WEST Python Workshop
 
-## Table of Contents
-1. [Pre-requisites](#pre-requisites)
-2. [Getting Started](#getting-started)
-    - [Clone the repository](#clone-the-repository)
-    - [Install dependencies](#install-dependencies)
-    - [Run the server](#run-the-server)
-    - [Import the Postman collection](#import-the-postman-collection)
-    - [Use Postman collection to make requests](#use-postman-collection-to-make-requests)
-3. [The Challenge](#the-challenge)
-    - [Level 1: Basic Endpoints for Getting Data](#level-1-basic-endpoints-for-getting-data)
-    - [Level 2: Create New Resources In the Database](#level-2-create-new-resources-in-the-database)
-    - [Level 3: Access Control](#level-3-access-control)
-    - [Level 4: Persist Data](#level-4-persist-data)
-    - [Level >9000: Super L33t Hacker Code Max Problem](#level-9000-super-l33t-hacker-code-max-problem)
-4. [The Permission System](#the-permission-system)
+1. [🦅 Overview](#-Overview)
+2. [👟 Pre-requisites](#-pre-requisites)
+3. [🏗️ Getting Started](#-getting-started)
+4. [💪 The Challenge](#-the-challenge)
+    - [🌟 Level 1: Basic Endpoints for Getting Data](#-level-1-basic-endpoints-for-getting-data)
+    - [🚀 Level 2: Create New Resources In the Database](#-level-2-create-new-resources-in-the-database)
+    - [💥 Level 3: Access Control](#-level-3-access-control)
+    - [🧠 Level 4: Persist Data](#-level-4-persist-data)
+    - [🤯 Level >9000: Super L33t Hacker Code Max Problem](#-level-9000-super-l33t-hacker-code-max-problem)
+5. [🔐 The Permission System](#-the-permission-system)
 
 ## 🦅 Overview
 
