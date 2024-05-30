@@ -1,14 +1,15 @@
 from fastapi import APIRouter, HTTPException
 from typing import List, Optional
 from .models import User, Brick
+from .database import database
 
 router = APIRouter()
 
 
+
 @router.get("/bricks", response_model=List[Brick])
 def get_bricks():
-    raise HTTPException(status_code=501, detail="Not implemented....... yet!")
-
+    return list(database["bricks"].values())
 
 @router.get("/users", response_model=List[User])
 def get_users():
