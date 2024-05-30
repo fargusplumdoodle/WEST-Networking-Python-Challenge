@@ -45,12 +45,12 @@
 			"response": []
 		},
 		{
-			"name": "Brick by ID",
+			"name": "Brick by color",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/bricks/red",
+					"raw": "http://localhost:8000/bricks/red?user=isaac",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -59,18 +59,24 @@
 					"path": [
 						"bricks",
 						"red"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "isaac"
+						}
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "User by ID",
+			"name": "User by name",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/users/admin",
+					"raw": "http://localhost:8000/users/isaac",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -78,7 +84,7 @@
 					"port": "8000",
 					"path": [
 						"users",
-						"admin"
+						"isaac"
 					]
 				}
 			},
@@ -90,7 +96,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/bricks/<id>?user=<id>",
+					"raw": "http://localhost:8000/bricks/red/?user=super",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -98,12 +104,13 @@
 					"port": "8000",
 					"path": [
 						"bricks",
-						"<id>"
+						"red",
+						""
 					],
 					"query": [
 						{
 							"key": "user",
-							"value": "<id>"
+							"value": "super"
 						}
 					]
 				}
