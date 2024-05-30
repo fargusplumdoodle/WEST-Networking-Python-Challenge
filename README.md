@@ -10,6 +10,7 @@
     - [🧠 Level 4: Persist Data](#-level-4-persist-data)
     - [🤯 Level >9000: Super L33t Hacker Code Max Problem](#-level-9000-super-l33t-hacker-code-max-problem)
 5. [🔐 The Permission System](#-the-permission-system)
+6. [📚 Useful Links and Resources](#-useful-links-and-resources)
 
 ## 🦅 Overview
 
@@ -21,7 +22,7 @@ permissions system..
 ## 👟 Pre-requisites
 - Recent version of Python installed
 - Git installed
-- Postman
+- Postman ([Postman Installation Guide](https://learning.postman.com/docs/getting-started/installation-and-updates/))
 
 ## 🏗️ Getting Started
 
@@ -189,6 +190,21 @@ because although his group includes `isaac` , his role is only `4000` .
 Galactor can access whatever they want because their role is `9001`, 
 even though they don't have any groups.
 
+
+## 📚 Useful Links and Resources
+
+ - [FastAPI Documentation](https://fastapi.tiangolo.com/)
+ - [FastAPI Tutorial for Beginners](https://fastapi.tiangolo.com/tutorial/)
+ - [Pydantic Documentation](https://docs.pydantic.dev/latest/)
+ - [Git Cheat Sheet PDF](https://education.github.com/git-cheat-sheet-education.pdf)
+ - [Postman API Testing Guide](https://www.guru99.com/postman-tutorial.html)
+ - [A really good (but advanced) guide to HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+
+These resources will help you get started with the tools and technologies used in this workshop.
+
+
 ----------
 
 Thank you @MahumAzeem for the help!
+
+
