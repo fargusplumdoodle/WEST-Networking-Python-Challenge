@@ -9,7 +9,8 @@ Normally you would use a real database like PostgreSQL, MySQL, SQLite, etc.
 But if you are here before level 4, you can just manually add
 more users/bricks.
 
-🧠 Level 4:
+
+🤯 Level >9000: Super L33t Hacker Code Max Problem:
      If you have got through level 3, you can implement a persistent database.
      You can modify this so instead of having a dictionary, it reads/writes
      to/from a JSON file.

@@ -21,34 +21,35 @@ permissions system..
 
 ## 👟 Pre-requisites
 - Recent version of Python installed
-- Git installed
 - Postman ([Postman Installation Guide](https://learning.postman.com/docs/getting-started/installation-and-updates/))
 
 ## 🏗️ Getting Started
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/fargusplumdoodle/WEST-Python-Workshop.git
-    cd WEST-Python-Workshop
-    ```
+1.  **Take a look at [the git repository](https://github.com/fargusplumdoodle/WEST-Python-Workshop)**
+      - Look through the files and the `README.md`
 
-2. **Install dependencies**:
+2. **Download the repository**:
+    - Click [here](https://github.com/fargusplumdoodle/WEST-Python-Workshop/archive/refs/heads/main.zip) to download the repo
+    - Unzip it to your favourite place 
+    - Open a terminal in the workshop directory (`cd ./path/to/the/WEST-Python-Workshop`)
+
+3. **Install dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
 
-3. **Run the server**:
+4. **Run the server**:
     ```bash
    fastapi run --reload
     ```
 
-4. **Import the Postman collection**:
+5. **Import the Postman collection**:
     - Open Postman
     - Go to `File` -> `Import`
     - Drag and drop the file `./WEST Python Challenge.postman_collection.json`
        into Postman
 
-5. **Use Postman collection to make requests to your server**
+6. **Use Postman collection to make requests to your server**
     - Initially, all the endpoints will return a `501 Not Implemented` error
     - You should be able to complete this whole challenge without
        making any modifications to the postman collection.
@@ -102,7 +103,7 @@ If the user doesn't have access to the brick, we should return `401 Not Authoriz
 
 For more information, read about the permission system below!
 
-### 🧠 Level 4: Persist Data
+### 🤯 Level >9000: Super L33t Hacker Code Max Problem
 
 Access Control? No problem.
 
@@ -117,12 +118,6 @@ inside a JSON file. Everytime you read bricks/users,
 they should come from that same file.
 
 This will allow the server to restart without us losing our data!
-
-### 🤯 Level >9000: Super L33t Hacker Code Max Problem
-
-If you got this far, that is pretty sweet. It's time to ship it right to production!
-
-Deploy to a platform like Heroku or run it locally using Docker.
 
 Good luck, and happy coding!
 
@@ -195,10 +190,10 @@ even though they don't have any groups.
 
  - [FastAPI Documentation](https://fastapi.tiangolo.com/)
  - [FastAPI Tutorial for Beginners](https://fastapi.tiangolo.com/tutorial/)
- - [Pydantic Documentation](https://docs.pydantic.dev/latest/)
- - [Git Cheat Sheet PDF](https://education.github.com/git-cheat-sheet-education.pdf)
  - [Postman API Testing Guide](https://www.guru99.com/postman-tutorial.html)
  - [A really good (but advanced) guide to HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+ - [Pydantic Documentation](https://docs.pydantic.dev/latest/)
+ - [Git Cheat Sheet PDF](https://education.github.com/git-cheat-sheet-education.pdf)
 
 These resources will help you get started with the tools and technologies used in this workshop.
 
