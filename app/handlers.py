@@ -1,29 +1,28 @@
 from fastapi import APIRouter, HTTPException
 from typing import List, Optional
-from .models import User, Brick
 from .database import database
 
 router = APIRouter()
 
 
-@router.get("/bricks", response_model=List[Brick])
-def get_bricks() -> List[Brick]:
+@router.get("/bricks", response_model=List[dict])
+def get_bricks() -> List[dict]:
     """
     🌟 Level 1: Retrieve all bricks from the database and return them to the client
     """
     return list(database["bricks"].values())
 
 
-@router.get("/users", response_model=List[User])
-def get_users() -> List[User]:
+@router.get("/users", response_model=List[dict])
+def get_users() -> List[dict]:
     """
     🌟 Level 1:  Retrieve all users from the database and return them to the client
     """
     raise HTTPException(status_code=501, detail="Not implemented....... yet!")
 
 
-@router.get("/users/{name}", response_model=User)
-def get_user(name: str) -> User:
+@router.get("/users/{name}")
+def get_user(name: str) -> dict:
     """
     🌟 Level 1:
              Find the user with the given name and return it to the client
@@ -33,7 +32,7 @@ def get_user(name: str) -> User:
 
 
 @router.get("/bricks/{color}")
-def get_brick(color: str, user: Optional[str] = None) -> Brick:
+def get_brick(color: str, user: Optional[str] = None) -> dict:
     """
     🌟 Level 1:
              Find the brick with the given color and return it to the client
@@ -53,8 +52,8 @@ def get_brick(color: str, user: Optional[str] = None) -> Brick:
     raise HTTPException(status_code=501, detail="Not implemented....... yet!")
 
 
-@router.post("/bricks", response_model=Brick)
-def create_brick(brick: Brick) -> Brick:
+@router.post("/bricks")
+def create_brick(brick: dict) -> dict:
     """
     🚀 Level 2:
             Create a new brick with the given data and add it to the database
@@ -65,8 +64,8 @@ def create_brick(brick: Brick) -> Brick:
     raise HTTPException(status_code=501, detail="Not implemented....... yet!")
 
 
-@router.post("/users", response_model=User)
-def create_user(user: User) -> User:
+@router.post("/users")
+def create_user(user: dict) -> dict:
     """
     🚀 Level 2:
             Create a new user with the given data and add it to the database
@@ -77,7 +76,7 @@ def create_user(user: User) -> User:
     raise HTTPException(status_code=501, detail="Not implemented....... yet!")
 
 
-def can_access(user: User, brick: Brick) -> bool:
+def can_access(user: dict, brick: dict) -> bool:
     """
     💥 Level 3:
             This function should return True if the user has access to the brick, and False otherwise.
