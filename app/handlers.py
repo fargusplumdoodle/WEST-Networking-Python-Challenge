@@ -28,7 +28,11 @@ def get_user(name: str) -> dict:
              Find the user with the given name and return it to the client
              If the user does not exist, return a 404 error (raise HTTPException(status_code=404))
     """
-    raise HTTPException(status_code=501, detail="Not implemented....... yet!")
+
+    user = database["users"].get(name)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    return user
 
 
 @router.get("/bricks/{color}")
