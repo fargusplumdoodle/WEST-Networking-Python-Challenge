@@ -40,7 +40,14 @@ permissions system..
 
 4. **Run the server**:
     ```bash
+   # On mac
    fastapi run --reload
+
+   # On Windows
+   # Copy this repo to your C drive, it will not work
+   # on your network drive
+   pip install uvicorn
+   python -m uvicorn main:app --reload
     ```
 
 5. **Import the Postman collection**:
