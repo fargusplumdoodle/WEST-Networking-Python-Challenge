@@ -18,7 +18,7 @@ def get_users() -> List[dict]:
     """
     🌟 Level 1:  Retrieve all users from the database and return them to the client
     """
-    raise HTTPException(status_code=501, detail="Not implemented....... yet!")
+    return list(database["users"].values())
 
 
 @router.get("/users/{name}")
